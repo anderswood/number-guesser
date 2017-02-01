@@ -1,0 +1,39 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align:center;
+  font-size: 50px;
+}
+header {
+  background: #404041;
+  color: #E6E7E8;
+  font-weight: 300;
+}
+header span {
+  color: #ED458B;
+  font-weight: 700;
+}
+input {
+  display: block;
+  margin: 15px auto;
+  font-size: 50px;
+  font-weight: 300;
+  border-width: 3px solid #929497;
+}
+button {
+  background: #929497;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  font-size: 50px;
+  margin: 15px;
+}
+button:hover {
+  background: #EB008B;
+  color: #FFFFFF;
+}
+h2 {
+  color: #404041;
+}
+p {
+  color: #EB008B;
+}
