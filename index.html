@@ -3,8 +3,9 @@
   <head>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,700">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
   </head>
   <header>
@@ -12,12 +13,22 @@
   </header>
   <body>
     <input id="input" placeholder="Enter your guess"></input>
-    <button id="guess">Guess</button>
-    <button id="clear">Clear</button>
-    <h2>Your last guess was</h2>
-    <p>NUM<p/>
-    <h2><span id="feedback">That is too high</span></h2>
-    <button id="reset">Reset</button>
+    <section id="ranges-container">
+      <label for="min-value">Min:</label>
+      <input type="number" id="min-value" placeholder="Min" value="1"></input>
+      <label for="max-value">Max:</label>
+      <input type="number" id="max-value" placeholder="Max" value="100"></input>
+    </section>
+    <button id="guess" disabled="true">Guess</button>
+    <button id="clear" disabled="true">Clear</button>
+    <section id="feedback-container">
+      <section id="feedback-container-2">
+        <h2>Your last guess was</h2>
+        <p>?<p/>
+        <h2><span id="feedback"> </span></h2>
+      </section>
+    </section>
+    <button id="reset" disabled="true">Reset</button>
   </body>
   <script type="text/javascript" src="javascript.js"></script>
 </html>
